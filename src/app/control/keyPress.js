@@ -5,20 +5,22 @@ var context = document.getElementById("canvas").getContext("2d");
 var leftMargin = 250;
 var rightMargin = 960;
 var key_enter = 13;
-var key_backspace = 100; // TODO:Achar ID da tecla Backspace
-var key_tab = 102;  // TODO:Achar ID da tecla TAB
+var key_backspace = 100; // TODO:Alterar ID da tecla Backspace
+var key_tab = 102;  // TODO:Alterar ID da tecla TAB
 
 var coordinateX= 230;
 var coordinateY= 180;
 
 
- cursor = new CursorAnimation();
+
 
 function KeyCheck()
 
 {
    var KeyID = event.keyCode;
    var charCode = String.fromCharCode(KeyID);
+
+   var word =
    context.fillText( charCode, coordinateX += 10, coordinateY);
 
     cursor.changePosition(coordinateX,coordinateY);
