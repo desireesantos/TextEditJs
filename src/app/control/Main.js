@@ -6,8 +6,16 @@
  * To change this template use File | Settings | File Templates.
  */
 
-function ControlWord (){
 
-   var word ;
+var controlWord = function (word) {
 
-}
+    var control = {};
+
+    control.word = function () {
+        return word;
+    };
+
+
+    return control;
+};
+
