@@ -1,7 +1,8 @@
-describe("Control Word", function(){
-    it("tem uma letra", function() {
-        var control = new controlWord("T");
-        expect(control.word("T")).toEqual("T");
+describe("ControlWord", function(){
+
+    it("has word T", function() {
+        var control = new ControlWord("A");
+        expect(control.word()).toEqual("T");
     });
 
 

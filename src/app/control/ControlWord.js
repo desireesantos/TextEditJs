@@ -1,12 +1,7 @@
-var controlWord = function (word) {
+ ControlWord = function(word) {
 
-    var control = {};
-
-    control.word = function () {
+    this.word = function () {
         return word;
     };
-
-
-    return control;
 };
 
