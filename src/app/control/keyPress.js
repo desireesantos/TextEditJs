@@ -19,11 +19,10 @@ function KeyCheck()
 {
    var KeyID = event.keyCode;
    var charCode = String.fromCharCode(KeyID);
-
-   var word =
+   var word = controlWord(charCode);
    context.fillText( charCode, coordinateX += 10, coordinateY);
 
-    cursor.changePosition(coordinateX,coordinateY);
+
 
 
     checkMargin();
