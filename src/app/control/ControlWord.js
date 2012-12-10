@@ -1,7 +1,13 @@
+
+
  ControlWord = function(word) {
 
-    this.word = function () {
+    this.Word = function () {
         return word;
     };
+
+
+
 };
 
+ exports.ControlWord = ControlWord;

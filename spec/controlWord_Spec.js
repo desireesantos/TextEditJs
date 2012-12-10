@@ -1,8 +1,9 @@
+
 describe("ControlWord", function(){
 
-    it("has word T", function() {
-        var control = new ControlWord("A");
-        expect(control.word()).toEqual("T");
+    it("Testing get into word", function() {
+        control = new ControlWord("A");
+        expect(control.Word()).isNot.toBeNull();
     });
 
 
