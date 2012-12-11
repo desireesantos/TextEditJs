@@ -1,5 +1,4 @@
 
-
  ControlWord = function(word) {
 
    var control = {};
