@@ -19,7 +19,11 @@ function KeyCheck()
 {
    var KeyID = event.keyCode;
    var charCode = String.fromCharCode(KeyID);
-   var word = controlWord(charCode);
+   var arrayWord = new Array( controlWord(charCode));
+
+    BuildWord(arrayWord);
+
+
    context.fillText( charCode, coordinateX += 10, coordinateY);
 
 
