@@ -1,6 +1,6 @@
 describe("BuildWord", function(){
 
-   var WordsArray = new Array();
+   var WordsArray =  Array();
     WordsArray.push("a");
     WordsArray.push("b");
 
