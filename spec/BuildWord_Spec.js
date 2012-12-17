@@ -1,26 +1,26 @@
-describe("Build Word", function(){
+describe("BuildWord", function(){
 
-   var temp = new Array();
-    temp.push("a");
-    temp.push("b");
+   var WordsArray = new Array();
+    WordsArray.push("a");
+    WordsArray.push("b");
 
 
 
-    it("Yes I push word ?", function() {
-        control = new BuildWord(temp);
+    it("Return true when add word", function() {
+        control = BuildWord(WordsArray);
         expect(control.addWord()).toBeTruthy();
     });
 
-    it("Pushing words", function() {
-        control = new BuildWord(temp);
+    it("Check new word after called addWord()", function() {
+        control = BuildWord(WordsArray);
         control.push("d");
         control.addWord("c");
         control.addWord("c");
         expect(control.toString()).toEqual("a,b,d,c,c");
     });
 
-    it("Popping words", function() {
-        control = new BuildWord(temp);
+    it("Remove last word", function() {
+        control = BuildWord(WordsArray);
         control.addWord("c");
         control.addWord("c");
         control.removeLastWord();
