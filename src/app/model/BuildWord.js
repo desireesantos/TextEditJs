@@ -24,6 +24,12 @@ BuildWord = function(ArrayWord , word)
     };
 
 
+  arrayWords.lastWord = function(){
+
+     return arrayWords(arrayWords.length);
+
+  }
+
     return arrayWords;
 
 };

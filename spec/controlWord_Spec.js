@@ -13,9 +13,4 @@ describe("ControlWord", function(){
     });
 
 
-    it("Word is A", function() {
-        control = new ControlWord("A");
-        expect(control.Word()).toEqual("A");
-    });
-
 });
