@@ -19,7 +19,7 @@ function KeyCheck()
 {
    var keyID = event.keyCode;
    var control = ControlWord(keyID);
-   var build = new BuildWord( [control.Word()] , control.Word());
+   var build = new BuildWord( Array[control.Word()] , control.Word());
 
    context.fillText( control.Word(), coordinateX += 10, coordinateY);
 

@@ -1,10 +1,16 @@
 
 BuildWord = function(ArrayWord , word)
 {
+    var arrayWords = Array(ArrayWord);
 
-    var arrayWords = new Array(ArrayWord, word);
 
-    arrayWords.addWord = function(){
+   function BuildWord(ArrayWord,word) {
+
+        this.addWord (word);
+    };
+
+
+    arrayWords.addWord = function(word){
 
         arrayWords.push(word);
         return "true";
