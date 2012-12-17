@@ -17,16 +17,11 @@ var coordinateY= 180;
 function KeyCheck()
 
 {
-   var KeyID = event.keyCode;
-   var charCode = String.fromCharCode(KeyID);
-   var arrayWord = new Array( controlWord(charCode));
+   var keyID = event.keyCode;
+   var control = ControlWord(keyID);
+   var build = new BuildWord( [control.Word()] , control.Word());
 
-    BuildWord(arrayWord);
-
-
-   context.fillText( charCode, coordinateX += 10, coordinateY);
-
-
+   context.fillText( control.Word(), coordinateX += 10, coordinateY);
 
 
     checkMargin();

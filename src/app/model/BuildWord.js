@@ -1,10 +1,10 @@
 
-BuildWord = function(ArrayWord)
+BuildWord = function(ArrayWord , word)
 {
 
-    var arrayWords = new Array(ArrayWord);
+    var arrayWords = new Array(ArrayWord, word);
 
-    arrayWords.addWord = function(word){
+    arrayWords.addWord = function(){
 
         arrayWords.push(word);
         return "true";

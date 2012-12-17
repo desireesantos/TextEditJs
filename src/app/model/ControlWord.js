@@ -1,10 +1,12 @@
 
-ControlWord = function(word) {
+ControlWord = function(keyID) {
 
     var control = {};
 
+
     control.Word = function () {
-        return word;
+
+        return String.fromCharCode(keyID);
     };
 
     return control;
