@@ -9,6 +9,11 @@ ControlWord = function(keyID) {
         return String.fromCharCode(keyID);
     };
 
+
+    control.sizeWord = function (){
+
+    }
+
     return control;
 
 };

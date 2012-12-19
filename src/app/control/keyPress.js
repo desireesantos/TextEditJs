@@ -21,11 +21,11 @@ function KeyCheck()
    var control = ControlWord(keyID);
    var build = new BuildWord( Array[control.Word()] , control.Word());
 
-   context.fillText( control.Word(), coordinateX += 10, coordinateY);
+   context.fillText( control.Word(), coordinateX += (context.measureText(control.Word())).width , coordinateY);
 
 
     checkMargin();
-    checkKey(KeyID);
+    checkKey(keyID);
 
    
 }
