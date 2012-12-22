@@ -10,9 +10,7 @@ ControlWord = function(keyID) {
     };
 
 
-    control.sizeWord = function (){
 
-    }
 
     return control;
 

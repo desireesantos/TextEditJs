@@ -23,7 +23,6 @@ function KeyCheck()
 
    context.fillText( control.Word(), coordinateX += (context.measureText(control.Word())).width , coordinateY);
 
-
     checkMargin();
     checkKey(keyID);
 
