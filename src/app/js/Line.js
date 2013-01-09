@@ -7,7 +7,7 @@
  */
 
 
-NewLine = function(ArrayWord , word)
+Line = function(ArrayWord , word)
 {
     var newline = Array(ArrayWord);
 
