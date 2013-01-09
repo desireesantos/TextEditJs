@@ -1,14 +1,22 @@
 
-Word = function(key) {
-
-    this.keyId = key;
+ var Word = function(key) {
 
 
 
-    Word.prototype.translateTocharCode = function() {
+     this.insertWord = function ()
+     {
 
-        return String.fromCharCode(this.keyID);
-    };
+         var line = new Line();
+         line.insertInLine(translateUnicodeToCode());
+
+
+     }
+
+   var translateUnicodeToCode = function(){
+
+        return String.fromCharCode(key);
+
+    }
 
 };
 
