@@ -1,25 +1,21 @@
-/**
- * Created with JetBrains WebStorm.
- * User: desireesantos
- * Date: 12/19/12
- * Time: 12:54 AM
- * To change this template use File | Settings | File Templates.
- */
 
-
-Line = function(ArrayWord , word)
+var Line = function(word)
 {
-    var newline = Array(ArrayWord);
+
+    var line =[];
+
+    this.insertInLine = function(word){
+
+        return line.push(word);
+
+    }
 
 
-    function BuildWord(ArrayWord,word) {
+    this.lastWord = function(word){
 
-        this.addWord (word);
-    };
+        return line[line.length];
 
-
-
-    return newline;
+    }
 
 };
 
