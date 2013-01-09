@@ -10,8 +10,10 @@ EspecialKeys = function(key) {
     {
         case backspace:
               line.backspace();break;
+
         case tab:
             line.tab();break;
+
         default:
             return false;
     }
