@@ -1,13 +1,23 @@
 
  var Word = function(key) {
 
-
+    var words;
 
      this.insertWord = function ()
      {
 
          var line = new Line();
-         line.insertInLine(translateUnicodeToCode());
+           words = line.insertInLine(translateUnicodeToCode());
+         return true;
+
+
+     }
+
+
+     this.lastWord = function ()
+     {
+
+         return words[words.length];
 
 
      }
@@ -17,6 +27,7 @@
         return String.fromCharCode(key);
 
     }
+
 
 };
 
