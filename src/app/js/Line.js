@@ -6,16 +6,12 @@ var Line = function(word)
 
     this.insertInLine = function(word){
 
-        return line.push(word);
+         line.push(word);
+        return line;
 
     }
 
 
-    this.lastWord = function(word){
-
-        return line[line.length];
-
-    }
 
 };
 
