@@ -4,7 +4,7 @@ var Line = function(word)
 
     var line =[];
 
-    this.insertInLine = function(word){
+    this.insertWordInLine = function(){
 
          line.push(word);
         return line;
