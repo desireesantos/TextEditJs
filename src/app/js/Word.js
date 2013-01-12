@@ -1,13 +1,14 @@
 
- var Word = function(key) {
+ var Word = function(keyId) {
 
-    var words;
+    var words = [];
+    var line = new Line("B");
 
      this.insertWord = function ()
      {
 
-         var line = new Line();
-           words = line.insertInLine(translateUnicodeToCode());
+
+         words = line.insertWordInLine();
          return true;
 
 
@@ -22,9 +23,9 @@
 
      }
 
-   var translateUnicodeToCode = function(){
+    var translateUnicodeToCode = function(){
 
-        return String.fromCharCode(key);
+        return String.fromCharCode(keyId);
 
     }
 
