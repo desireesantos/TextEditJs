@@ -6,6 +6,7 @@ EspecialKeys = function(key) {
     var enter     = 13;
 
     var line = new Line();
+    
 
     switch(key)
     {
