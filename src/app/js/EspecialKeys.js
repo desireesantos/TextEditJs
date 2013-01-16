@@ -1,17 +1,23 @@
 
 EspecialKeys = function(key) {
 
-    var backspace= 8;
-    var tab      = 9;
+    var backspace = 8;
+    var tab       = 9;
+    var enter     = 13;
 
+    var line = new Line();
 
     switch(key)
     {
         case backspace:
-              line.backspace();break;
+              line.backspacePosition();break;
 
         case tab:
-            line.tab();break;
+            line.tabPosition();break;
+
+        case enter:
+            line.nextLine();break;
+
 
         default:
             return false;
