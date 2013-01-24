@@ -1,34 +1,28 @@
-
  var Word = function(keyId) {
 
     var words = [];
     var line = new Line("B");
 
-     this.insertWord = function ()
-     {
+
+    this.insertWord = function ()
+        {
+            words = line.insertWord();
+          return true;
+        }
 
 
-         words = line.insertWordInLine();
-         return true;
+    this.lastWord = function ()
+         {
+
+           return words[words.length];
+         }
 
 
-     }
+    var translateUnicodeToCode = function()
+        {
 
-
-     this.lastWord = function ()
-     {
-
-         return words[words.length];
-
-
-     }
-
-    var translateUnicodeToCode = function(){
-
-        return String.fromCharCode(keyId);
-
-    }
-
+          return String.fromCharCode(keyId);
+        }
 
 };
 
